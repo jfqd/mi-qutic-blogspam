@@ -9,6 +9,12 @@ echo "* Build blogspam";
 go get github.com/jfqd/blogspam-api
 cp go/bin/blogspam-api /opt/local/bin/blogspam-api
 
+echo "* Setup blogspam user and group"
+groupadd -g 1100 blogspam
+useradd -m -s /usr/bin/bash -d /nonexistent -u 1100 -g blogspam blogspam
+passwd -N blogspam
+passwd -d blogspam
+
 # Clean up
 echo "* Cleaning up."
 rm /root/customize
