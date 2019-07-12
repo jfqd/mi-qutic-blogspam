@@ -6,7 +6,7 @@ PATH=/opt/local/gnu/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/usr/sbin
 set -o errexit
 
 echo "* Build blogspam";
-go get github.com/BlogSpam-Net/blogspam-api
+go get github.com/jfqd/blogspam-api
 cp go/bin/blogspam-api /opt/local/bin/blogspam-api
 
 # Clean up
