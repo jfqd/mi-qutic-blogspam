@@ -1,0 +1,18 @@
+#!/usr/bin/bash
+
+PATH=/opt/local/gnu/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/usr/sbin
+
+# Exit if any commands fail
+set -o errexit
+
+echo "* Build blogspam";
+go get github.com/BlogSpam-Net/blogspam-api
+cp go/bin/blogspam-api /opt/local/bin/blogspam-api
+
+# Clean up
+echo "* Cleaning up."
+rm /root/customize
+rm -rf /root/go
+
+# Prepare image for provisioning
+sm-prepare-image -y

@@ -1,0 +1,8 @@
+name="qutic-blogspam"
+organization="qutic development"
+brand="blogspam instance"
+version="20181018.0"
+description="qutic blogspam image"
+homepage="https://github.com/jfqd/mi-qutic-blogspam"
+users="root admin"
+base="80eb3464-7ec3-11e9-8365-c32736cdd54f"
