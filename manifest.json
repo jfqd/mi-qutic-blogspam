@@ -1,6 +1,6 @@
 {
   "name":         "qutic-blogspam",
-  "version":      "20181018.0",
+  "version":      "20181018.1",
   "description":  "qutic blogspam image",
   "organization": "qutic development",
   "brand":        "blogspam instance",
