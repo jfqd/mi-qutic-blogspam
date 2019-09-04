@@ -1,7 +1,7 @@
 name="qutic-blogspam"
 organization="qutic development"
 brand="blogspam instance"
-version="20181018.1"
+version="20181018.2"
 description="qutic blogspam image"
 homepage="https://github.com/jfqd/mi-qutic-blogspam"
 users="root admin"
