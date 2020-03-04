@@ -24,7 +24,8 @@ else
   /opt/qutic/bin/ssl-selfsigned.sh -d ${SSL_HOME} -f nginx
 fi
 
-chmod 0640 "${SSL_HOME}"/nginx.* || true
+chmod 0440 "${SSL_HOME}"/nginx.* || true
+chmod 0400 "${SSL_HOME}"/nginx.key || true
 
 # Always run a restart of the webserver
 svcadm restart svc:/pkgsrc/nginx:default
